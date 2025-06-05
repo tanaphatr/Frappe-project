@@ -1,4 +1,4 @@
-# 📦 Frappe + ERPNext + LMS + HRMS Installation Guide (v15)
+# 📦 Frappe + ERPNext + LMS + HRMS Installation (v15)
 
 This guide walks you through setting up a full Frappe ecosystem with **ERPNext**, **LMS**, and **HRMS** using Frappe version 15.
 
