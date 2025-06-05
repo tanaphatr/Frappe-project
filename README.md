@@ -178,27 +178,25 @@ You will have:
 
 Running at: `http://localhost:8000`
 
-## ✨ Note
+## 📌 Notes2
 
-IF Css call on Frappe have problem ✨
+IF Css call on Frappe have problem 
 
 ```bash
 cd Your-bench
 bench build
 ```
 
-Clear Cashe✨
+Clear Cashe
 
 ```bash
 bench --site test.local clear-cache
 bench --site test.local clear-website-cache
 ```
 
-And Bench restart Befor Bench start✨
+And Bench restart Befor Bench start
 
 ```bash
 bench restart
 bench start
 ```
-
-✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
