@@ -75,7 +75,7 @@ sudo pip3 install frappe-bench
 bench init frappe-bench --frappe-branch version-15
 cd frappe-bench
 ```
-
+frappe-bench use Your Name exam. frappe-company or companyname
 ---
 
 ### 7. Create a New Site
@@ -83,10 +83,11 @@ cd frappe-bench
 ```bash
 bench new-site your-site.local
 ```
+your-site.local use Your site what you want
 
 Set:
 - MySQL root password (from step 3)
-- Frappe admin password
+- Frappe admin password (User name = Administrator )
 
 ---
 
@@ -152,15 +153,15 @@ Add:
 ## ✅ Example
 
 ```bash
-bench init frappe-bench-vasvox --frappe-branch version-15
-cd frappe-bench-vasvox
-bench new-site vasvox.local
+bench init frappe-bench-test --frappe-branch version-15
+cd frappe-bench-test
+bench new-site test.local
 bench get-app learning --branch main https://github.com/frappe/lms
 bench get-app frappe_hr --branch version-15 https://github.com/frappe/hrms
 bench get-app erpnext --branch version-15
-bench --site vasvox.local install-app lms
-bench --site vasvox.local install-app hrms
-bench --site vasvox.local install-app erpnext
+bench --site test.local install-app lms
+bench --site test.local install-app hrms
+bench --site test.local install-app erpnext
 bench start
 ```
 
@@ -175,3 +176,28 @@ You will have:
 - HRMS
 
 Running at: `http://localhost:8000`
+
+## ✨ Note
+
+IF Css call on Frappe have problem ✨
+
+```bash
+cd Your-bench
+bench build
+```
+
+Clear Cashe✨
+
+```bash
+bench --site test.local clear-cache
+bench --site test.local clear-website-cache
+```
+
+And Bench restart Befor Bench start✨
+
+```bash
+bench restart
+bench start
+```
+
+✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨
